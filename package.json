@@ -7,7 +7,8 @@
     "start": "node server",
     "test": "lab -a code -L",
     "lint": "lab -dL",
-    "demo": "NODE_ENV=test npm start"
+    "demo": "NODE_ENV=test npm start",
+    "dev": "NODE_ENV=development npm start"
   },
   "repository": {
     "type": "git",

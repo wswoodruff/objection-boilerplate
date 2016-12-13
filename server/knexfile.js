@@ -11,7 +11,7 @@ module.exports = {
             database: 'demo',
         },
         useNullAsDefault: true,
-        debug: true
+        // debug: true
     },
     production: {
         client: 'mysql',
