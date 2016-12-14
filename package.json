@@ -32,6 +32,7 @@
     "hoek": "4.x.x",
     "inert": "4.x.x",
     "joi": "10.x.x",
+    "jsondiffpatch": "^0.2.4",
     "labbable": "1.x.x",
     "mysql": "^2.12.0",
     "mysql2": "^1.1.2",
