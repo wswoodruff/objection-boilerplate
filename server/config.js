@@ -1,7 +1,6 @@
 'use strict';
 
 const Path = require('path');
-const SailsDisk = require('sails-disk');
 
 module.exports = {
 
@@ -10,7 +9,7 @@ module.exports = {
         port: process.env.PORT || 3000
     },
 
-    schwifty: { knexFile: require('./knexfile'), dir: Path.join(__dirname, '../lib')},
+    schwifty: { knexFile: require('./knexfile'), dir: Path.join(__dirname, '../lib') },
 
     poop: {
         logPath: Path.normalize(`${__dirname}/../poop.log`)
