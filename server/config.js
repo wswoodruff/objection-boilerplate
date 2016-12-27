@@ -9,7 +9,14 @@ module.exports = {
         port: process.env.PORT || 3000
     },
 
-    schwifty: { knexFile: require('./knexfile'), dir: Path.join(__dirname, '../lib') },
+    schwifty: {
+        knexConfig: require('./knexConfig')[process.env.NODE_ENV]
+    },
+
+    'schwifty-migration': {
+        dir: Path.join(__dirname, '../lib'),
+        mode: 'create'
+    },
 
     poop: {
         logPath: Path.normalize(`${__dirname}/../poop.log`)
