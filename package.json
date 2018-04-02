@@ -41,7 +41,7 @@
     "sails-disk": "0.10.x",
     "sqlite3": "^3.1.8",
     "vision": "4.x.x",
-    "waterline": "0.12.x"
+    "waterline": "0.13.1"
   },
   "devDependencies": {
     "code": "3.x.x",
