@@ -8,7 +8,9 @@
     "test": "lab -a code -L",
     "lint": "lab -dL",
     "demo": "NODE_ENV=test npm start",
-    "dev": "NODE_ENV=development npm start"
+    "dev": "NODE_ENV=development npm start",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -38,15 +40,17 @@
     "mysql2": "^1.1.2",
     "objection": "^0.6.2",
     "poop": "2.x.x",
-    "sails-disk": "0.10.x",
+    "sails-disk": "1.0.0",
     "sqlite3": "^3.1.8",
     "vision": "4.x.x",
-    "waterline": "0.12.x"
+    "waterline": "0.13.1",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "code": "3.x.x",
     "eslint-config-hapi": "9.x.x",
     "eslint-plugin-hapi": "4.x.x",
     "lab": "10.x.x"
-  }
+  },
+  "snyk": true
 }
